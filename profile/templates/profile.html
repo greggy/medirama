@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="firefox" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<title>
+Profile
+</title>
+
+<!-- Meta Tags -->
+<meta name="robots" content="index, nofollow, noarchive">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="Wufoo.com">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{MEDIA_URL}}css/forms/dynamic.13939.css" type="text/css"> 
+<link rel="stylesheet" href="{{MEDIA_URL}}css/custom/2/theme.css" type="text/css">
+
+<!-- JavaScript -->
+<script type="text/javascript" src="{{MEDIA_URL}}js/dynamic.js"></script>
+
+
+</head><body id="public">
+
+<div id="container">
+<h1 id="logo">
+<a>Wufoo</a>
+</h1>
+
+<form id="form8" name="form8" class="wufoo rightLabel page1 hideMarkers"
+ autocomplete="off" enctype="multipart/form-data" method="post" 
+action="">
+
+<div id="header" class="info">
+<h2>Profile</h2>
+<div></div>
+</div>
+
+<ul>
+<li class="paging-context ">
+
+
+
+
+
+<table class="pgStyle1 circle7" cellspacing="0">
+<tbody><tr>
+
+
+
+
+<td class="selected">
+<var>1</var>
+<b id="pagecircle1">Essential data</b>
+</td>
+<td class="">
+<var>2</var>
+<b id="pagecircle2">Contact data</b>
+</td>
+<td class="">
+<var>3</var>
+<b id="pagecircle3">Education</b>
+</td>
+<td class="">
+<var>4</var>
+<b id="pagecircle4">Work places</b>
+</td>
+<td class="">
+<var>5</var>
+<b id="pagecircle5">Classes, conferences, papers</b>
+</td>
+<td class="">
+<var>6</var>
+<b id="pagecircle6">Spoken languages</b>
+</td>
+
+
+<td>
+<a><var>...</var></a>
+</td>
+</tr>
+</tbody></table>
+
+</li>
+
+
+
+
+<li id="fo8li128" class="{% if form.last_name.errors or form.first_name.errors %}error{% endif %}">
+<label class="desc" id="title128" for="Field128">
+Name
+<span id="req_128" class="req">*</span>
+</label>
+{{ form.name }}
+<p class="instruct" id="instruct128"><small>first name and last name<br>
+*** This is a composite field ("fancy pants"). Uppercase every name..</small></p>
+{% if form.first_name.errors or form.last_name.errors %}
+<p class="error">This field is required. Please enter a value.</p>
+{% endif %}
+</li>
+
+
+
+<li id="fo8li1190" class="     ">
+<label class="desc" id="title1190" for="Field1190_0">
+Sex
+</label>
+<div>
+{{ form.sex }}
+</div>
+</li>
+
+
+<li id="fo8li6" class="{% if form.email.errors or form.non_field_errors %}error{% endif %}">
+<label class="desc" id="title6" for="Field6">
+Email
+<span id="req_6" class="req">*</span>
+</label>
+<div>
+<input id="Field6" name="email" type="text" class="field text medium" value="{% if form.email.data %}{{ form.email.data }}{% endif %}" maxlength="255" tabindex="5" onkeyup="handleInput(this);" onchange="handleInput(this);" />
+</div>
+<p class="instruct" id="instruct6"><small>this address will become your 
+username</small></p>
+{% if form.email.errors %}
+<p class="error">{{ form.email.errors.as_text }}</p>
+{% endif %}
+{% if form.non_field_errors %}
+<p class="error">{{ form.non_field_errors.as_text }}</p>
+{% endif %}
+</li>
+
+
+
+<li id="fo8li133" class="{% if form.confirm_email.errors or form.non_field_errors %}error{% endif %}">
+<label class="desc" id="title133" for="Field133">
+Confirm email
+<span id="req_133" class="req">*</span>
+</label>
+<div>
+<input id="Field133" name="confirm_email" type="text" class="field text medium" value="{% if form.confirm_email.data %}{{ form.confirm_email.data }}{% endif %}" maxlength="255" tabindex="6" onkeyup="handleInput(this);" onchange="handleInput(this);" />
+</div>
+<p class="instruct" id="instruct133"><small>re-write email address<br>
+*** Add a validation rule enforcing that the two addresses are 
+identical.</small></p>
+{% if form.confirm_email.errors %}
+<p class="error">{{ form.confirm_email.errors.as_text }}</p>
+{% endif %}
+{% if form.non_field_errors %}
+<p class="error">{{ form.non_field_errors.as_text }}</p>
+{% endif %}
+</li>
+
+
+
+<li id="fo8li988" class="      ">
+<label class="desc" id="title988" for="Field988">
+Profession
+<span id="req_988" class="req">*</span>
+</label>
+<div>
+{{ form.profession }}
+</div>
+<p class="instruct" id="instruct988"><small>choose from list<br>
+*** Add display rules: some following fields are present or not 
+depending on what is selected here</small></p>
+</li>
+
+
+
+<li id="fo8li1089" class="     hide">
+<label class="desc" id="title1089" for="Field1089_0">
+Residency 
+<span id="req_1089" class="req">*</span>
+</label>
+<div>
+<input id="radioDefault_1089" name="Field1089" value="" type="hidden">
+<span>
+<input id="Field1089_0" name="Field1089" class="field radio" value="not 
+started yet" tabindex="8" onchange="handleInput(this);" 
+onmouseup="handleInput(this);" type="radio">
+<label class="choice" for="Field1089_0">
+not started yet</label>
+</span>
+<span>
+<input id="Field1089_1" name="Field1089" class="field radio" 
+value="started" tabindex="9" onchange="handleInput(this);" 
+onmouseup="handleInput(this);" type="radio">
+<label class="choice" for="Field1089_1">
+started</label>
+</span>
+<span>
+<input id="Field1089_2" name="Field1089" class="field radio" 
+value="finished" tabindex="10" onchange="handleInput(this);" 
+onmouseup="handleInput(this);" checked="checked" type="radio">
+<label class="choice" for="Field1089_2">
+finished</label>
+</span>
+</div>
+</li>
+
+
+<li id="fo8li346" class="      ">
+<label class="desc" id="title346" for="Field346">
+Medical specialty
+<span id="req_346" class="req">*</span>
+</label>
+<div>
+{{ form.specialty }}
+</div>
+<p class="instruct" id="instruct346"><small>chose from list<br>
+*** The "medical specialty" field appearing later will be pre-filled 
+with what is selected here.<br>
+Split this field into 2 subfields (create fancy pants): country and 
+specialty name. The country will be a dropdown list with the 27 EU 
+states + Switzerland. The specialty name will be a dropdown list as 
+here, with the specialty official untranslated names. </small></p>
+</li>
+
+
+
+<li id="fo8li1300" class="     ">
+<label class="desc" id="title1300" for="Field1300_0">
+EU conformity certificates
+</label>
+<div>
+{{ form.certificate }}
+</div>
+<p class="instruct" id="instruct1300"><small>conformity with the 
+2005/36/CE European directive</small></p>
+</li>
+
+
+<li id="fo8li239" class="{% if form.phone.errors %}error{% endif %}">
+<label class="desc" id="title239" for="Field239">
+Phone number
+<span id="req_239" class="req">*</span>
+</label>
+<div>
+{{ form.phone }}
+</div>
+<p class="instruct" id="instruct239"><small>phone number internaţional 
+format<br>
+*** The "mobile phone" field from later will be pre-filled with what was
+ written here</small></p>
+{% if form.phone.errors %}
+<p class="error">This field is required. Please enter a value.</p>
+{% endif %}
+</li>
+
+
+
+ 
+
+<li class="buttons ">
+<div>
+
+<input id="nextPage" name="nextPage" 
+value="gIg2FUwuBeQtAYtbXRT5houDxnui1jjxQbwuBesFtYn9mU8X8=" type="hidden">
+<input name="previousPage" id="previousPage" 
+value="rH43p4ycTEQ46b7R4Wovk6oqwApA3zswcTuwuBeUwGvMY8=" type="hidden">
+<input name="currentPage" id="currentPage" 
+value="fy3ZDqY8YhAExZaNK5Zbou9cNWuFrrvgJ3bIoO8gjHo=" type="hidden">
+<input id="nextPageButton" name="nextPageButton" class="btTxt submit" 
+onmousedown="doSubmitEvents();" value="Save and continue" type="submit">
+
+
+<span class="marker">
+<b>1</b> / <b>7</b>
+</span>
+
+</div>
+</li>
+
+<li style="display: none;">
+<label for="comment">Do Not Fill This Out</label>
+<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+<input id="idstamp" name="idstamp" 
+value="krY0soVTOrjD63TmiucWXw9BcvuFf7zZ4/Goxw8U4d8=" type="hidden">
+<input id="stats" name="stats" 
+value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:null}"
+ type="hidden">
+<input id="clickOrEnter" name="clickOrEnter" value="" type="hidden">
+</li>
+</ul>
+</form> </div><!--container-->
+<img id="bottom" src="{{MEDIA_URL}}images/bottom.png" alt="">
+
+
+
+<!-- JavaScript -->
+<script type="text/javascript">
+__RULES = {"Field988":[{"RuleId":"426","Type":"Hide","Setting":{"FieldName":"1089","FieldTypes":{"988":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"426","FieldName":"988","Filter":"is not","Value":"medic","ReportId":"8","RuleId":"426"}]},{"RuleId":"438","Type":"Hide","Setting":{"FieldName":"346","FieldTypes":{"988":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"438","FieldName":"988","Filter":"is not","Value":"medic","ReportId":"8","RuleId":"438"}]},{"RuleId":"442","Type":"Hide","Setting":{"FieldName":"1300","FieldTypes":{"988":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"442","FieldName":"988","Filter":"is","Value":"kinetoterapeut","ReportId":"8","RuleId":"442"}]}],"Field363":[{"RuleId":"427","Type":"Hide","Setting":{"FieldName":"364","FieldTypes":{"363":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"427","FieldName":"363","Filter":"is","Value":"nu am \u00eenceput rezidentiatul","ReportId":"8","RuleId":"427"}]},{"RuleId":"434","Type":"Hide","Setting":{"FieldName":"365","FieldTypes":{"363":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"434","FieldName":"363","Filter":"is","Value":"nu am \u00eenceput rezidentiatul","ReportId":"8","RuleId":"434"}]},{"RuleId":"435","Type":"Hide","Setting":{"FieldName":"366","FieldTypes":{"363":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"435","FieldName":"363","Filter":"is","Value":"nu am \u00eenceput rezidentiatul","ReportId":"8","RuleId":"435"}]},{"RuleId":"436","Type":"Hide","Setting":{"FieldName":"367","FieldTypes":{"363":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"436","FieldName":"363","Filter":"is","Value":"nu am \u00eenceput rezidentiatul","ReportId":"8","RuleId":"436"}]},{"RuleId":"441","Type":"Show","Setting":{"FieldName":"2687","FieldTypes":{"363":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"441","FieldName":"363","Filter":"is","Value":"alta","ReportId":"8","RuleId":"441"}]}],"Field366":[{"RuleId":"428","Type":"Show","Setting":{"FieldName":"367","FieldTypes":{"366":"eurodate"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"428","FieldName":"366","Filter":"is before","Value":"2011-02-05","ReportId":"8","RuleId":"428"}]}],"Field683":[{"RuleId":"429","Type":"Show","Setting":{"FieldName":"783","FieldTypes":{"683":"checkbox"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"429","FieldName":"683","Filter":"is","Value":"C\u0101s\u0101torit \/ \u00een parteneriat","ReportId":"8","RuleId":"429"}]},{"RuleId":"431","Type":"Show","Setting":{"FieldName":"884","FieldTypes":{"683":"checkbox"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"431","FieldName":"683","Filter":"is","Value":"C\u0101s\u0101torit \/ \u00een parteneriat","ReportId":"8","RuleId":"431"}]}],"Field364":[{"RuleId":"432","Type":"Show","Setting":{"FieldName":"365","FieldTypes":{"364":"eurodate"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"432","FieldName":"364","Filter":"is before","Value":"2011-02-05","ReportId":"8","RuleId":"432"}]},{"RuleId":"433","Type":"Show","Setting":{"FieldName":"365","FieldTypes":{"364":"eurodate"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"433","FieldName":"364","Filter":"is before","Value":"2011-02-05","ReportId":"8","RuleId":"433"}]}],"Field358":[{"RuleId":"437","Type":"Hide","Setting":{"FieldName":"360","FieldTypes":{"358":"europhone"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"437","FieldName":"358","Filter":"is","Value":"","ReportId":"8","RuleId":"437"}]}],"Field1089":[{"RuleId":"439","Type":"Hide","Setting":{"FieldName":"346","FieldTypes":{"1089":"radio"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"439","FieldName":"1089","Filter":"is","Value":"ne\u00eenceput","ReportId":"8","RuleId":"439"}]},{"RuleId":"443","Type":"Hide","Setting":{"FieldName":"363","FieldTypes":{"1089":"radio"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"443","FieldName":"1089","Filter":"is","Value":"ne\u00eenceput","ReportId":"8","RuleId":"443"}]}],"Field477":[{"RuleId":"440","Type":"Show","Setting":{"FieldName":"1298","FieldTypes":{"477":"select"}},"FormId":"8","MatchType":"any","Conditions":[{"ConditionId":"440","FieldName":"477","Filter":"is","Value":"alta","ReportId":"8","RuleId":"440"}]}]};
+__ENTRY = [];
+__PRICES = null;
+</script>
+
+
+<noscript></noscript>
+</body></html>

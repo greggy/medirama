@@ -1,0 +1,65 @@
+[
+    {
+        "pk": 1, 
+        "model": "profile.profession", 
+        "fields": {
+            "title": "medical doctor"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "profile.profession", 
+        "fields": {
+            "title": "nurse"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "profile.specialty", 
+        "fields": {
+            "title": "Cardiologie"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "profile.person", 
+        "fields": {
+            "first_name": "Test", 
+            "last_name": "Teter", 
+            "certificate": 0, 
+            "profession": 1, 
+            "specialty": 1, 
+            "sex": 0, 
+            "phone": "4012345678", 
+            "email": "test@test.com"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "profile.person", 
+        "fields": {
+            "first_name": "Test2", 
+            "last_name": "Tester", 
+            "certificate": 0, 
+            "profession": 1, 
+            "specialty": 1, 
+            "sex": 1, 
+            "phone": "4087654321", 
+            "email": "test2@test.com"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "profile.person", 
+        "fields": {
+            "first_name": "Test", 
+            "last_name": "Testov", 
+            "certificate": 0, 
+            "profession": 1, 
+            "specialty": 1, 
+            "sex": 0, 
+            "phone": "4087654321", 
+            "email": "test3@test.com"
+        }
+    }
+]
